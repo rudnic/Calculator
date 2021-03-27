@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import java.lang.String?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.202-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="23.0" layoutY="50.0" prefHeight="40.0" prefWidth="71.0" text="Из">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="76.0" layoutY="56.0" prefWidth="150.0" fx:id="from" value="10">
+         <String fx:value="2"/>
+         <String fx:value="8"/>
+         <String fx:value="10"/>
+         <String fx:value="16"/>
+      </ChoiceBox>
+      <Label layoutX="284.0" layoutY="57.0" text="В">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="334.0" layoutY="56.0" prefWidth="150.0" fx:id="into" value="2">
+         <String fx:value="2"/>
+         <String fx:value="8"/>
+         <String fx:value="10"/>
+         <String fx:value="16"/>
+      </ChoiceBox>
+      <Label layoutX="14.0" layoutY="136.0" text="Число">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TextField layoutX="94.0" layoutY="137.0" fx:id="sourceNum"/>
+      <Button fx:id="transButtton" layoutX="343.0" layoutY="129.0" mnemonicParsing="false" onAction="#onClickButton" text="Перевести">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextField editable="false" layoutX="145.0" layoutY="225.0" fx:id="resField"/>
+      <Label layoutX="14.0" layoutY="224.0" text="Результат">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
